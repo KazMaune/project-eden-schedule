@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
     styleUrls: [ './app.component.scss' ]
 })
 export class AppComponent {
-    title = 'project-eden-schedule';
+    initialSet1: string = '';
+    initialSet2: string = '';
+    initialSet3: string = '';
 }

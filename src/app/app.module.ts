@@ -4,7 +4,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarModule } from './navbar/navbar.module';
+import { NavbarModule } from './components/navbar/navbar.module';
+import { InputFieldModule } from './components/input-field/input-field.module';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { NavbarModule } from './navbar/navbar.module';
         BrowserModule,
         AppRoutingModule,
         NgbModule,
-        NavbarModule
+        NavbarModule,
+        InputFieldModule
     ],
     providers: [],
     bootstrap: [ AppComponent ]

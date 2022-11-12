@@ -1,0 +1,9 @@
+<div [class]="classNames">
+    <input type="text"
+           class="form-control"
+           [id]="id"
+           [placeholder]="label"
+           [ngModel]="ngModel"
+           (ngModelChange)="ngModelChange.emit($event)">
+    <label [for]="id">{{ label }}</label>
+</div>
