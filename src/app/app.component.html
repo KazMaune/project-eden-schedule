@@ -4,73 +4,170 @@
 
 <!--Head-->
 <header>
-    <div class="container-fluid text-center" style="padding-top: 10px;">
-        <input type="text" class="text-center bg-dark w-25" style="border: 0px; color: white;" value="Event Date">
+    <div class="container-fluid px-5 py-4">
+        <input type="text" class="text-center form-control border-0 w-25 fs-3"
+               style="border: 0px; color: white; margin: 0 auto;" value="Event Date">
     </div>
 </header>
 <!--Head-->
 
 <!--Main-->
-<main class="container-fluid bg-dark" style="color: white; padding-top: 35px;">
+<main class="container-fluid px-5" style="color: white;">
     <div class="row">
-        <div class="col text-center">
-            <span>Left Stage</span>
-            <br>
-            <span style="padding-right: 10px;">Set 1</span><input style="margin-top: 15px;" class="text-center" value="Fill">
-            <br>
-            <span style="padding-right: 10px;">Set 2</span><input style="margin-top: 15px;" class="text-center" value="Fill">
-            <br>
-            <span style="padding-right: 10px;">Set 3</span><input style="margin-top: 15px;" class="text-center" value="Fill">
-        </div>
-        <div class="col text-center">
-            <span>Center Stage</span>
-            <br>
-            <span style="padding-right: 10px;">Set 1</span><input style="margin-top: 15px;" class="text-center" value="Fill">
-            <br>
-            <span style="padding-right: 10px;">Set 2</span><input style="margin-top: 15px;" class="text-center" value="Fill">
-            <br>
-            <span style="padding-right: 10px;">Set 3</span><input style="margin-top: 15px;" class="text-center" value="Fill">
-        </div>
-        <div class="col text-center">
-            <span>Right Stage</span>
-            <br>
-            <span style="padding-right: 10px;">Set 1</span><input style="margin-top: 15px;" class="text-center" value="Fill">
-            <br>
-            <span style="padding-right: 10px;">Set 2</span><input style="margin-top: 15px;" class="text-center" value="Fill">
-            <br>
-            <span style="padding-right: 10px;">Set 3</span><input style="margin-top: 15px;" class="text-center" value="Fill">
-        </div>
-    </div>
-    <div style="margin-top: 100px;" class="row">
-        <div class="col border">
-            <span>Float</span>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <input style="margin-top: 20px;" type="text" class="text-center" value="Fill">
-                    <input style="margin-top: 20px;" type="text" class="text-center" value="Fill">
-                    <input style="margin-top: 20px;" type="text" class="text-center" value="Fill">
-                    <input style="margin-top: 20px;" type="text" class="text-center" value="Fill">
-                    <input style="margin-top: 20px;" type="text" class="text-center" value="Fill">
+        <div class="col">
+            <div class="text-center p-3 border rounded bg-dark">
+                <h4>Left Stage</h4>
+                <br>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="left-set-1-input" placeholder="Set 1">
+                    <label for="left-set-1-input">Set 1</label>
                 </div>
-                <div class="col">
-                    <input style="margin-top: 20px;" type="text" class="text-center" value="Fill">
-                    <input style="margin-top: 20px;" type="text" class="text-center" value="Fill">
-                    <input style="margin-top: 20px;" type="text" class="text-center" value="Fill">
-                    <input style="margin-top: 20px;" type="text" class="text-center" value="Fill">
-                    <input style="margin-top: 20px;" type="text" class="text-center" value="Fill">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="left-set-2-input" placeholder="Set 2">
+                    <label for="left-set-2-input">Set 2</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="left-set-3-input" placeholder="Set 3">
+                    <label for="left-set-3-input">Set 3</label>
                 </div>
             </div>
         </div>
-        <div class="col border">
-            <span>Staff</span>
-            <br>
-            <div class="row">
-                Host<input type="text" value="Fill">
-                Mc<input type="text" value="Fill">
-                Photographer<input type="text" value="Fill">
-                DJ<input type="text" value="Fill">
-                Security<input type="text" value="Fill">
+
+        <div class="col">
+            <div class="text-center p-3 border rounded bg-dark">
+                <h4>Center Stage</h4>
+                <br>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="center-set-1-input" placeholder="Set 1">
+                    <label for="center-set-1-input">Set 1</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="center-set-2-input" placeholder="Set 2">
+                    <label for="center-set-2-input">Set 2</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="center-set-3-input" placeholder="Set 3">
+                    <label for="center-set-3-input">Set 3</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="text-center p-3 border rounded bg-dark">
+                <h4>Right Stage</h4>
+                <br>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="right-set-1-input" placeholder="Set 1">
+                    <label for="right-set-1-input">Set 1</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="right-set-2-input" placeholder="Set 2">
+                    <label for="right-set-2-input">Set 2</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="right-set-3-input" placeholder="Set 3">
+                    <label for="right-set-3-input">Set 3</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 48px;" class="row">
+        <div class="col">
+            <div class="p-3 border rounded bg-dark">
+                <h4>Float</h4>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="float-input-1" placeholder="Float">
+                            <label for="float-input-1">Float</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="float-input-2" placeholder="Float">
+                            <label for="float-input-2">Float</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="float-input-3" placeholder="Float">
+                            <label for="float-input-3">Float</label>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="float-input-4" placeholder="Float">
+                            <label for="float-input-4">Float</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="float-input-5" placeholder="Float">
+                            <label for="float-input-5">Float</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="float-input-6" placeholder="Float">
+                            <label for="float-input-6">Float</label>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="float-input-7" placeholder="Float">
+                            <label for="float-input-7">Float</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="float-input-8" placeholder="Float">
+                            <label for="float-input-8">Float</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="float-input-9" placeholder="Float">
+                            <label for="float-input-9">Float</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="p-3 border rounded bg-dark">
+                <h4>Staff</h4>
+                <br>
+                <div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="host-input" placeholder="Host">
+                                <label for="host-input">Host</label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="mc-input" placeholder="MC">
+                                <label for="mc-input">MC</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="photographer-input" placeholder="Photographer">
+                                <label for="photographer-input">Photographer</label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="dj-input" placeholder="DJ">
+                                <label for="dj-input">DJ</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="security-input" placeholder="Security">
+                        <label for="security-input">Security</label>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

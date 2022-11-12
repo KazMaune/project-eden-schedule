@@ -1,5 +1,12 @@
 $primary: #008080;
 $secondary: #0a35f3;
+$dark: #212529;
+$body-bg: #1a1d20;
+$input-bg: $body-bg;
+$light: #f8f9fa;
+$border-color: #909090;
+$input-border-color: $border-color;
+$input-color: $light;
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
