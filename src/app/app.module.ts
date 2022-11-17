@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarModule } from './components/navbar/navbar.module';
 import { InputFieldModule } from './components/input-field/input-field.module';
+import { HomeModule } from './routes/home/home.module';
+import { Stage1Module } from './routes/stage1/stage1.module';
+import { Stage2Module } from './routes/stage2/stage2.module';
 
 @NgModule({
     declarations: [
@@ -16,7 +19,10 @@ import { InputFieldModule } from './components/input-field/input-field.module';
         AppRoutingModule,
         NgbModule,
         NavbarModule,
-        InputFieldModule
+        InputFieldModule,
+        HomeModule,
+        Stage1Module,
+        Stage2Module
     ],
     providers: [],
     bootstrap: [ AppComponent ]
