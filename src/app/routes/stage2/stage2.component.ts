@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Stage2Component implements OnInit {
 
+    dancers1: string = '';
+    dancers2: string = '';
+
     constructor() {
     }
 

@@ -2,4 +2,70 @@
 <eden-stage-header></eden-stage-header>
 <!--Head-->
 
-<p>stage2 works!</p>
+<!--Main-->
+<main class="container-fluid px-5" style="color: white;">
+    <!--Stage-->
+    <div class="row">
+        <!--Left Stage-->
+        <div class="col">
+            <eden-stage-set stagePositionName="Left Stage"
+                            set1Id="left-set-1"
+                            set2Id="left-set-2"
+                            set3Id="left-set-3"
+                            [(set1)]="dancers1"
+                            [(set2)]="dancers2"
+                            [(set3)]="dancers1">
+            </eden-stage-set>
+        </div>
+        <!--Left Stage-->
+
+        <!--Right Stage-->
+        <div class="col">
+            <eden-stage-set stagePositionName="Right Stage"
+                            set1Id="right-set-1"
+                            set2Id="right-set-2"
+                            set3Id="right-set-3"
+                            [(set1)]="dancers2"
+                            [(set2)]="dancers1"
+                            [(set3)]="dancers2">
+            </eden-stage-set>
+        </div>
+        <!--Right Stage-->
+    </div>
+    <!--Stage-->
+
+    <!--Specials & Map-->
+    <div class="row" style="margin-top: 48px;">
+        <!--Specials-->
+        <div class="col">
+            <eden-stage-specials></eden-stage-specials>
+        </div>
+        <!--Specials-->
+
+        <!--Map-->
+        <div class="col">
+            <div class="p-3 border rounded bg-dark">
+                <h4>Map Starting Positions</h4>
+            </div>
+        </div>
+        <!--Map-->
+    </div>
+    <!--Specials & Map-->
+
+    <!--Float & Staff-->
+    <div style="margin-top: 48px;" class="row">
+        <!--Float-->
+        <div class="col">
+            <eden-stage-floats></eden-stage-floats>
+        </div>
+        <!--Float-->
+
+        <!--Staff-->
+        <div class="col">
+            <eden-stage-staff></eden-stage-staff>
+        </div>
+        <!--Staff-->
+    </div>
+    <!--Float & Staff-->
+</main>
+<!--Main-->
