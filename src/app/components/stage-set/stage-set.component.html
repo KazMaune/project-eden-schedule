@@ -1,0 +1,29 @@
+<div class="text-center p-3 border rounded bg-dark">
+    <h4>{{ stagePositionName }}</h4>
+    <br>
+    <eden-input-field
+        [id]="set1Id"
+        [name]="set1Id"
+        label="Set 1"
+        classes="mb-3"
+        [ngModel]="set1"
+        (ngModelChange)="set1Change.emit($event)">
+    </eden-input-field>
+
+    <eden-input-field
+        [id]="set2Id"
+        [name]="set2Id"
+        label="Set 2"
+        classes="mb-3"
+        [ngModel]="set2"
+        (ngModelChange)="set2Change.emit($event)">
+    </eden-input-field>
+
+    <eden-input-field
+        [id]="set3Id"
+        [name]="set3Id"
+        label="Set 3"
+        [ngModel]="set3"
+        (ngModelChange)="set3Change.emit($event)">
+    </eden-input-field>
+</div>

@@ -2,4 +2,224 @@
 <eden-stage-header></eden-stage-header>
 <!--Head-->
 
-<p>stage1 works!</p>
+<!--Main-->
+<main class="container-fluid px-5" style="color: white;">
+    <!--Stage-->
+    <div class="row">
+        <!--Left Stage-->
+        <div class="col">
+            <eden-stage-set stagePositionName="Left Stage"
+                            set1Id="left-set-1"
+                            set2Id="left-set-2"
+                            set3Id="left-set-3"
+                            [(set1)]="set1"
+                            [(set2)]="set2"
+                            [(set3)]="set3">
+            </eden-stage-set>
+        </div>
+        <!--Left Stage-->
+
+        <!--Center Stage-->
+        <div class="col">
+            <eden-stage-set stagePositionName="Center Stage"
+                            set1Id="center-set-1"
+                            set2Id="center-set-2"
+                            set3Id="center-set-3"
+                            [(set1)]="set3"
+                            [(set2)]="set1"
+                            [(set3)]="set2">
+            </eden-stage-set>
+        </div>
+        <!--Center Stage-->
+
+        <!--Right Stage-->
+        <div class="col">
+            <eden-stage-set stagePositionName="Right Stage"
+                            set1Id="right-set-1"
+                            set2Id="right-set-2"
+                            set3Id="right-set-3"
+                            [(set1)]="set2"
+                            [(set2)]="set3"
+                            [(set3)]="set1">
+            </eden-stage-set>
+        </div>
+        <!--Right Stage-->
+    </div>
+    <!--Stage-->
+
+    <!--Specials & Map-->
+    <div class="row" style="margin-top: 48px;">
+        <!--Specials-->
+        <div class="col">
+            <div class="p-3 border rounded bg-dark">
+                <h4>Specials</h4>
+                <br>
+
+                <h5 class="mb-3">Set 1</h5>
+
+                <div class="row">
+                    <div class="col">
+                        <eden-input-field
+                            id="specials-name-1-input"
+                            label="Special 1 Name"
+                            classes="mb-3">
+                        </eden-input-field>
+                    </div>
+
+                    <div class="col">
+                        <eden-input-field
+                            id="specials-dancer-1-input"
+                            label="Special 1 Dancer"
+                            classes="mb-3">
+                        </eden-input-field>
+                    </div>
+                </div>
+
+                <h5 class="mb-3">Set 2</h5>
+
+                <div class="row">
+                    <div class="col">
+                        <eden-input-field
+                            id="specials-name-2-input"
+                            label="Special 2 Name"
+                            classes="mb-3">
+                        </eden-input-field>
+                    </div>
+
+                    <div class="col">
+                        <eden-input-field
+                            id="specials-dancer-2-input"
+                            label="Special 2 Dancer"
+                            classes="mb-3">
+                        </eden-input-field>
+                    </div>
+                </div>
+
+                <h5 class="mb-3">Set 3</h5>
+            </div>
+        </div>
+        <!--Specials-->
+
+        <!--Map-->
+        <div class="col">
+            <div class="p-3 border rounded bg-dark">
+                <h4>Map Starting Positions</h4>
+            </div>
+        </div>
+        <!--Map-->
+    </div>
+    <!--Specials & Map-->
+
+    <!--Float & Staff-->
+    <div style="margin-top: 48px;" class="row">
+        <!--Float-->
+        <div class="col">
+            <div class="p-3 border rounded bg-dark">
+                <h4>Float</h4>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <eden-input-field
+                            id="float-input-1"
+                            label="Float"
+                            classes="mb-3">
+                        </eden-input-field>
+                        <eden-input-field
+                            id="float-input-2"
+                            label="Float"
+                            classes="mb-3">
+                        </eden-input-field>
+                        <eden-input-field
+                            id="float-input-3"
+                            label="Float">
+                        </eden-input-field>
+                    </div>
+
+                    <div class="col">
+                        <eden-input-field
+                            id="float-input-4"
+                            label="Float"
+                            classes="mb-3">
+                        </eden-input-field>
+                        <eden-input-field
+                            id="float-input-5"
+                            label="Float"
+                            classes="mb-3">
+                        </eden-input-field>
+                        <eden-input-field
+                            id="float-input-6"
+                            label="Float">
+                        </eden-input-field>
+                    </div>
+
+                    <div class="col">
+                        <eden-input-field
+                            id="float-input-7"
+                            label="Float"
+                            classes="mb-3">
+                        </eden-input-field>
+                        <eden-input-field
+                            id="float-input-8"
+                            label="Float"
+                            classes="mb-3">
+                        </eden-input-field>
+                        <eden-input-field
+                            id="float-input-9"
+                            label="Float">
+                        </eden-input-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Float-->
+
+        <!--Staff-->
+        <div class="col">
+            <div class="p-3 border rounded bg-dark">
+                <h4>Staff</h4>
+                <br>
+                <div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <eden-input-field
+                                id="host-input"
+                                label="Host">
+                            </eden-input-field>
+                        </div>
+
+                        <div class="col">
+                            <eden-input-field
+                                id="mc-input"
+                                label="MC">
+                            </eden-input-field>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <eden-input-field
+                                id="photographer-input"
+                                label="Photographer">
+                            </eden-input-field>
+                        </div>
+
+                        <div class="col">
+                            <eden-input-field
+                                id="dj-input"
+                                label="DJ">
+                            </eden-input-field>
+                        </div>
+                    </div>
+
+                    <eden-input-field
+                        id="security-input"
+                        label="Security">
+                    </eden-input-field>
+                </div>
+            </div>
+        </div>
+        <!--Staff-->
+    </div>
+    <!--Float & Staff-->
+</main>
+<!--Main-->

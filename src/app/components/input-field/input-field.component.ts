@@ -11,6 +11,9 @@ export class InputFieldComponent implements OnInit {
     id: string;
 
     @Input()
+    name: string;
+
+    @Input()
     classes: string;
 
     @Input()

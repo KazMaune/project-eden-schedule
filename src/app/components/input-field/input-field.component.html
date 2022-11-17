@@ -2,6 +2,7 @@
     <input type="text"
            class="form-control"
            [id]="id"
+           [name]="name"
            [placeholder]="label"
            [ngModel]="ngModel"
            (ngModelChange)="ngModelChange.emit($event)">
