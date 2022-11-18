@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,7 +23,8 @@ import { Stage2Module } from './routes/stage2/stage2.module';
         InputFieldModule,
         HomeModule,
         Stage1Module,
-        Stage2Module
+        Stage2Module,
+        FontAwesomeModule
     ],
     providers: [],
     bootstrap: [ AppComponent ]

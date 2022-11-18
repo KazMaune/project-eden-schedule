@@ -1,0 +1,66 @@
+@import '../../../theme';
+
+header {
+    .eden-header {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        img, h3 {
+            display: inline-block;
+        }
+
+        h3 {
+            margin: 0 0 0 8px;
+            padding: 0;
+        }
+    }
+}
+
+.eden-home-container {
+    max-width: 900px;
+    margin: 0 auto;
+
+    a {
+        text-decoration: none;
+        color: $light;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .eden-stage-links {
+        a {
+            img {
+                display: block;
+                max-height: 200px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .eden-extra-links {
+        a {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-column-gap: 8px;
+            box-sizing: border-box;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+
+    img {
+        max-height: 200px;
+        position: absolute;
+    }
+}

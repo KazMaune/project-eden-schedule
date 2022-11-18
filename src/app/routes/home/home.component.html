@@ -1,1 +1,78 @@
-<p>home works!</p>
+<!--Header-->
+<header>
+    <div class="px-5 py-4 eden-header">
+        <img src="/assets/project-eden-logo-sm.png"
+             alt="Logo" width="48" height="42"
+             class="d-inline-block align-text-top">
+        <h3>Project Eden</h3>
+    </div>
+</header>
+
+<!--Header-->
+
+<!--Main-->
+<main class="container-fluid px-5 eden-home-container">
+    <!--Stage Links-->
+    <div class="p-3 border rounded bg-dark mb-4">
+        <div class="eden-stage-links row">
+            <!--Stage 1-->
+            <a class="col text-center" routerLink="/stage1">
+                <h4 class="mb-3">Stage 1</h4>
+                <img src="/assets/stage1.png" alt="Stage 1" />
+            </a>
+            <!--Stage 1-->
+
+            <!--Stage 2-->
+            <a class="col text-center" routerLink="/stage2">
+                <h4 class="mb-3">Stage 2</h4>
+                <img src="/assets/stage2.png" alt="Stage 2" />
+            </a>
+            <!--Stage 2-->
+        </div>
+    </div>
+    <!--Stage Links-->
+
+    <!--Extra Links-->
+    <div class="eden-extra-links">
+        <a href="https://discord.gg/projecteden"
+           target="_blank"
+           class="p-3 border rounded bg-dark mb-3">
+            <fa-icon [icon]="faDiscord"></fa-icon>
+            Discord
+            <fa-icon [icon]="faArrowRight"></fa-icon>
+        </a>
+
+        <a href="https://www.patreon.com/ProjectEdenVR"
+           target="_blank"
+           class="p-3 border rounded bg-dark mb-3">
+            <fa-icon [icon]="faPatreon"></fa-icon>
+            Patreon
+            <fa-icon [icon]="faArrowRight"></fa-icon>
+        </a>
+
+        <a href="https://clubmerch.co/en-ca/collections/project-eden"
+           target="_blank"
+           class="p-3 border rounded bg-dark mb-3">
+            <fa-icon [icon]="faBagShopping"></fa-icon>
+            Merch
+            <fa-icon [icon]="faArrowRight"></fa-icon>
+        </a>
+    </div>
+    <!--Extra Links-->
+</main>
+<!--Main-->
+
+<!--Footer-->
+<footer>
+    <img src="/assets/jimbo.png" alt="Jimbo"
+         [ngStyle]="jimboStyles" />
+    <img src="/assets/hikari.png" alt="Hikari"
+         [ngStyle]="hikariStyles" />
+    <img src="/assets/arya.png" alt="Arya"
+         [ngStyle]="aryaStyles" />
+    <img src="/assets/maria.png" alt="Maria"
+         [ngStyle]="mariaStyles" />
+    <img src="/assets/zerxi.png" alt="Zerxi"
+         [ngStyle]="zerxiStyles" />
+</footer>
+<!--Footer-->
