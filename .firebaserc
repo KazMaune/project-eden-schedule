@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "project-eden-staff": {
+      "hosting": {
+        "project-eden-schedule": [
+          "project-eden-staff"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "project-eden-staff"
+  }
+}

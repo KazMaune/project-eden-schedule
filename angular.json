@@ -102,6 +102,16 @@
                         ],
                         "scripts": []
                     }
+                },
+                "deploy": {
+                    "builder": "@angular/fire:deploy",
+                    "options": {
+                        "prerender": false,
+                        "ssr": false,
+                        "browserTarget": "project-eden-schedule:build:production",
+                        "firebaseProject": "project-eden-staff",
+                        "firebaseHostingSite": "project-eden-staff"
+                    }
                 }
             }
         }
